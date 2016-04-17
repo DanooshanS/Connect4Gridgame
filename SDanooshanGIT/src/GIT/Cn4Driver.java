@@ -2,6 +2,13 @@ package GIT;
 import java.util.*;
 
 import javax.media.j3d.Billboard;
+/*	Connect4GridGame by Lohitha and Danooshan.
+ *  Incomplete diagonal win checking.
+ *  Prints the board, and ends the game when 4 connect.
+ *  AI is using random to select piece placement.
+ *  However an error occurs when the AI tries to place in column 6.
+ */
+
 
 public class Cn4Driver {
 
@@ -11,6 +18,10 @@ public class Cn4Driver {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome to Connect 4!");
 		System.out.println("Rules are as followed:");
+		System.out.println("You are R, and the opponent is Y");
+		System.out.println("You select one of the 7 columns by entering values from 0 - 6");
+		System.out.println("To win the game you must connect 4 pieces either vertically or horizontally.");
+		System.out.println("Good luck!");
 		int[] column = new int[7];
 		String[] board = new String[42];
 		int player = 1;
