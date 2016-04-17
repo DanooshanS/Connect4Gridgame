@@ -52,6 +52,9 @@ public class Cn4Driver {
 				}
 				board[PosPicker.Picker(answer, board)] = " R";
 				gameOver = Winner.determineVerticalR(board);
+				if (gameOver == false){
+					gameOver = WinnerHorizontal.determineHorizontalR(board);
+				}
 				if (gameOver == true){
 					System.out.println("You win.");
 					player = player - 1;
@@ -67,6 +70,9 @@ public class Cn4Driver {
 				}
 				board[PosPicker.Picker(answer, board)] = " Y";
 				gameOver = Winner.determineVerticalY(board);
+				if (gameOver == false){
+					gameOver = WinnerHorizontal.determineHorizontalY(board);
+				}
 				if (gameOver == true){
 					System.out.println("The AI wins.");
 					player = player - 1;
