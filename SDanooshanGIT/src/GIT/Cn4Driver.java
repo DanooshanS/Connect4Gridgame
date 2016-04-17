@@ -72,10 +72,19 @@ public class Cn4Driver {
 					player = player - 1;
 				}
 			}
-			
-			
-			
 		}
+		//The board after game finishes.
+		System.out.println(board[0]+ "|" + board[6] + "|" + board[12]+ "|" + board[18]+  "|" + board[24]+  "|" + board[30]+  "|" + board[36]);
+		System.out.println("--------------------");
+		System.out.println(board[1]+ "|" + board[7] + "|" + board[13]+ "|" + board[19]+  "|" + board[25]+  "|" + board[31]+  "|" + board[37]);
+		System.out.println("--------------------");
+		System.out.println(board[2]+ "|" + board[8] + "|" + board[14]+ "|" + board[20]+  "|" + board[26]+  "|" + board[32]+  "|" + board[38]);
+		System.out.println("--------------------");
+		System.out.println(board[3]+ "|" + board[9] + "|" + board[15]+ "|" + board[21]+  "|" + board[27]+  "|" + board[33]+  "|" + board[39]);
+		System.out.println("--------------------");
+		System.out.println(board[4]+ "|" + board[10] + "|" + board[16]+ "|" + board[22]+  "|" + board[28]+  "|" + board[34]+  "|" + board[40]);
+		System.out.println("--------------------");
+		System.out.println(board[5]+ "|" + board[11] + "|" + board[17]+ "|" + board[23]+  "|" + board[29]+  "|" + board[35]+  "|" + board[41]);
 	}
 
 }
